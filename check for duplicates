@@ -1,0 +1,22 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    int[] nums={2,5,42,7,9,6,45,6};
+	    int target=6, count=0;
+	    int i,j,n=nums.length;
+	    for(i=0;i<n;i++){
+	        for(j=i+1;j<n;j++){
+	            if(nums[i]==nums[j]){
+	                count=1;
+	                break;
+	            }
+	        }
+	    }
+	    if(count==1){
+	        System.out.println("true");
+	    }
+	    else{
+	        System.out.println("flase");
+	    }
+	}
+}
