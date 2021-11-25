@@ -1,0 +1,14 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    int[] nums={2,5,42,7,9,6,45,6};
+	    int target=6, count=0;
+	    int i,n=nums.length;
+	    for(i=0;i<n;i++){
+	        if(nums[i]==target){
+	            count=count+1;
+	        }
+	    }
+	    System.out.println(target+" repeated "+count+" times in array");
+	}
+}
